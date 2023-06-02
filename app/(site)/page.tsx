@@ -24,19 +24,34 @@ export default function Home() {
           >
             Bem vindo de volta
           </h1>
-          <div className='
+          <div
+            className="
+          mt-4
           grid
           grid-cols-1
+          gap-3
           sm:grid-cols-2
           xl:grid-cols-3
           2xl:grid-cols-4
-          gap-3
-          mt-4
-          '>
-              <ListItem image="/images/liked.png" name="Músicas Curtidas" href='liked'/>
+          "
+          >
+            <ListItem
+              image="/images/liked.png"
+              name="Músicas Curtidas"
+              href="liked"
+            />
           </div>
         </div>
       </Header>
+      <div className="mb-7 mt-2 px-6">
+        <div className="flex items-center justify-between">
+          <h1 className="text-2xl font-semibold text-white">
+            Novos lançamentos
+          </h1>
+        </div>
+        <div>Lista de Musicas</div>
+      </div>
+     
     </div>
   )
 }
